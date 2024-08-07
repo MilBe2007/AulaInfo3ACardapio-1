@@ -64,8 +64,14 @@ export default function App() {
     console.table(listaPedidos);
 
     const removerItem = (id) => {
-        let listaAux = listaPedidos.filter((pedido)=> pedido.id !== id);
-        setPedidos(listaAux)
+        let listaAux = listaPedidos.filter((pedido)=> 
+            {
+              if(pedido.id == id){
+
+              }
+            }
+        );
+        setPedidos(listaAux);
     }
    
     return (
